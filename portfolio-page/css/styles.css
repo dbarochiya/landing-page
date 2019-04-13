@@ -1,0 +1,125 @@
+html {
+	font-family: 'Reem Kufi', sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper > * {
+  padding: 20px;
+}
+.page-main {
+  flex-grow: 1;
+}
+.page-header nav {
+  display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
+	align-items: center;
+	margin-top: 0.5em;
+}
+.page-header nav p{
+	font-family: monospace;
+}
+.page-header nav p a{
+	font-weight: 600;
+	color: white;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.intro {
+	font-size: 3.75em;
+	font-weight: 600;
+}
+.tagline {
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
+}
+.information{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+.content{
+	display: flex;
+	width: 33.33%;
+	flex-direction: column;
+	justify-content: center;
+}
+.header{
+	margin-bottom: 1rem;
+}
+.info-text{
+	font-family: monospace;
+}
+.info-text > ul {
+	align-content: center;
+}
+.info-text > ul > li {
+	padding: 0.1rem;
+} 
+.icons-social i {
+	padding: 10px;
+	font-size: 2.5rem;
+}
+.page-footer {
+  display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	margin-bottom: 0.5em;
+	font-family: monospace;
+}
+.page-footer .message {
+  display: flex;
+	font-size: 0.8rem;
+}
+
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+  .page-header .cta-contact {
+    order: 1;
+	}
+	.page-footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+	.page-footer .meessage {
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 768px) {
+  .page-main {
+    padding-left: 90px;
+  }
+}
